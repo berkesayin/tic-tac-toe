@@ -1,6 +1,6 @@
 {
   "name": "tic-tac-toe-brk",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Tic Tac Toe Components",
   "main": "dist/bundle.js",
   "scripts": {
