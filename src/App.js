@@ -4,8 +4,7 @@ import Board from "./components/Board";
 const App = () => {
   return (
     <>
-      <div>Tic Tac Toe Game</div>
-      <Board />
+      <Board name="Berke" game="Tic Tac Toe" />
     </>
   );
 };

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Square from "./Square";
 import calculateWinner from "../functions/calculateWinner";
 
-const Board = () => {
+const Board = ({ name, game }) => {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
 
@@ -36,6 +36,8 @@ const Board = () => {
   return (
     <>
       <div className="board-row">
+        <div> Name = {name} </div>
+        <div> Game = {game} </div>
         <div className="status">{status}</div>
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
